@@ -1,122 +1,108 @@
-# Site
-repository: sproogen/resume-theme
-favicon: images/favicon.ico
+repository: sproogen/resume-theme 
+favicon: images/favicon.ico 
 
-# Content configuration version
 version: 2
 
-# Personal info
-name: Brett Harris
-title: Senior Network System Administrator
-email: brett.h@email.co.uk
-website: www.github.com/sproogen/resume-theme
+name: Muhammad Aamir Saeed
+title: Platform Engineer
+location: Milton Keynes, England
+email: m.aamir.s.110@gmail.com
+website: www.linkedin.com/in/maamirs
 
-# Dark Mode (true/false/never)
-darkmode: false
+darkmode: true
 
-# Social links
-twitter_username: facespics
-github_username:  sproogen
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-instagram_username: jameswgrant
-linkedin_username: jameswgrant
-# xing_username: jekyll
-# pinterest_username: jekyll
-youtube_username: globalmtb
-# googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
+github_username: maamirs
+linkedin_username: maamirs
 
-# Additional icon links
 additional_links:
-- title: itsgoingto.be
-  icon: fas fa-globe
-  url: https://www.itsgoingto.be
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
 
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
-
-# About Section
-# about_title: About Me
 about_profile_image: images/profile.jpg
-about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+about_content: |
+  Platform Engineer with experience developing and maintaining backend infrastructure, ensuring performance, reliability, and scalability. Proficient in designing and implementing CI/CD pipelines (Azure DevOps, AWS CodeBuild), managing containerized applications (Kubernetes, Docker), and utilizing cloud services (AWS, Azure). Skilled in Infrastructure as Code (Terraform, Ansible, CloudFormation, ARM) and monitoring (CloudWatch, Azure Monitor, Prometheus, Grafana). Also experienced in Embedded Software Engineering (C++, C, Python, Yocto, RTOS).
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  Key skills include: <mark>AWS</mark>, <mark>Azure DevOps</mark>, <mark>Kubernetes</mark>, <mark>Terraform</mark>, <mark>CI/CD</mark>, <mark>C/C++</mark>, <mark>Embedded Linux</mark>.
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Projects
+    layout: list
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
-        # link_text: Project Website
+        title: Processor Design for Graph Applications
         additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+          - title: IEEE 2022 30th Signal Processing and Communications Applications Conference
+            icon: fas fa-book
+            url:
         quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          Publication based on Master's research[cite: 21].
+        description: |
+          Developed as part of the Master's program at Bilkent University[cite: 21]. Analysis of Scratch Pad Memory-based Processor Architecture for Graph Parallel Applications[cite: 21].
 
-  - title: Experience # Title for the section
-    layout: list # Type of content section (list/text)
+      - layout: top-middle
+        title: Secure Communication System for SUPARCO
+        quote: >
+          Final Year Project for Bachelor's degree[cite: 22].
+        description: |
+          Development of Secure and Reliable Communication System for SUPARCO (Pakistan) for B.Sc. at COMSATS University[cite: 22].
+
+  - title: Experience
+    layout: list
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
-        quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
-        description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+        title: BP Pulse
+        sub_title: Platform Engineer
+        caption:
+        description: |
+            Develop and maintain backend infrastructure for the BP Pulse app, ensuring performance, reliability, and scalability.
+            Design and implement CI/CD pipelines using Azure DevOps Pipelines and AWS CodeBuild, enabling efficient software delivery and automated deployments.
+            Manage and optimize containerized applications using Kubernetes (Amazon EKS) and Docker, ensuring seamless orchestration and scalability.
+            Utilize AWS services (EC2, S3, RDS, Lambda, DynamoDB, CloudFormation) and Azure DevOps to build and deploy scalable cloud solutions.
+            Automate infrastructure provisioning and configuration management with Terraform, Ansible, CloudFormation, and Azure Resource Manager (ARM) templates.
+            Implement monitoring and observability using AWS CloudWatch, Azure Monitor, Prometheus, and Grafana, ensuring system reliability and proactive incident resolution.
 
-  - title: Education # Title for the section
-    layout: list # Type of content section (list/text)
+      - layout: left
+        title: BP (British Petroleum)
+        sub_title: Embedded Software Engineer
+        caption: October 2022 – Present
+        description: |
+            Develop and design next-gen embedded software (C++/C) for electric car chargers (IEC 61851, OCPP 1.6 & 2.0.1, MISRA, UK smart charge standards)[cite: 6, 7]. Design Windows-based simulator for charge points[cite: 8]. Develop/build embedded Linux (Yocto) for SoCs[cite: 9]. Maintain legacy Python code[cite: 10]. Create/Maintain CI/CD pipelines (Azure ADO, AWS)[cite: 10]. Provide customer support for bugs[cite: 11].
+
+      - layout: left
+        title: Baykar Tech
+        sub_title: Embedded Software Engineer
+        caption: April 2021 – October 2022
+        description: |
+            Spearheaded multi-threaded C/C++ scalable applications on Embedded ARM SoCs[cite: 12]. Managed/built Real-time Linux (RTOS) kernel builds and C device drivers[cite: 13]. Developed FPGA IPs and device drivers for ARM SoCs (GNSS, Ethernet)[cite: 14]. Maintained embedded Linux bootloaders and device trees[cite: 15]. Performed integration testing for UAV applications[cite: 16]. Designed/simulated MATLAB Simulink models for 5G signal processing[cite: 17].
+
+      - layout: left
+        title: Bilkent University
+        sub_title: Graduate Teaching Assistant
+        caption: September 2018 – April 2021
+        description: |
+            Provided instructional support, formulated lesson plans[cite: 18]. Trained undergraduate students on FPGA development and digital design systems (System Verilog/Verilog)[cite: 19, 20]. Instructed weekly labs and tutorials[cite: 20].
+
+  - title: Education
+    layout: list
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-        description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+        title: Bilkent University, Ankara, Turkey
+        caption: 2021
+        sub_title: Master of Science in Computer Engineering
+        description: |
+          Publication: Processor Design for Graph Applications – IEEE 2022 30th Signal Processing and Communications Applications Conference[cite: 21].
+          Awards/Honours: Departmental Scholarship, TÜBİTAK Sponsored Project (Grant no: EEEAG 119E559)[cite: 21].
+          Research Thesis: “Analysis of Scratch Pad Memory-based Processor Architecture for Graph Parallel Applications.” [cite: 21]
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+      - layout: left
+        title: COMSATS University, Islamabad, Pakistan
+        caption: 2018
+        sub_title: Bachelor of Science in Electrical (Computer) Engineering
+        description: |
+          GPA: 3.43/4.00[cite: 22].
+          Awards/Honours: Two Distinctions, Honour Roll[cite: 22].
+          Final Year Project: “Development of Secure and Reliable Communication System for SUPARCO (Pakistan).” [cite: 22]
 
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
-
-# Footer
 footer_show_references: true
-# references_title: References on request (Override references text)
 
-# Build settings
 remote_theme: sproogen/resume-theme
 
 sass:
