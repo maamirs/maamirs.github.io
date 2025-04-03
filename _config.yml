@@ -51,7 +51,7 @@ content:
       - layout: left
         title: BP (British Petroleum)
         sub_title: Platform Engineer
-        caption: March 202 – Present
+        caption: March 2024 – Present
         description: |
             Develop and maintain backend infrastructure for the BP Pulse app, ensuring performance, reliability, and scalability.
             Design and implement CI/CD pipelines using Azure DevOps Pipelines and AWS CodeBuild, enabling efficient software delivery and automated deployments.
@@ -104,20 +104,11 @@ content:
 
 
   - title: Certifications
-    layout: list
-    content:
-      - layout: left
-        title: AWS Certified Solutions Architect – Associate
-        caption: Valid until 2027
-        description: |
-          ![aws-certified-solutions-architect-associate](/images/aws-certified-solutions-architect-associate.png "aws-certified-solutions-architect-associate")
+    layout: text
+    content: |
+        ![aws-certified-solutions-architect-associate](/images/aws-certified-solutions-architect-associate.png "aws-certified-solutions-architect-associate")
+        ![aws-certified-cloud-practitioner](/images/aws-certified-cloud-practitioner.png "aws-certified-cloud-practitioner")
 
-
-      - layout: left
-        title: AWS Certified Cloud Practitioner
-        caption: Valid until 2027
-        description: |
-          ![aws-certified-cloud-practitioner](/images/aws-certified-cloud-practitioner.png "aws-certified-cloud-practitioner")
 
 
 footer_show_references: true
