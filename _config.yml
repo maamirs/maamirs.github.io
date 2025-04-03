@@ -18,39 +18,39 @@ additional_links:
 
 about_profile_image: images/profile.jpg
 about_content: |
-  Platform Engineer with experience developing and maintaining backend infrastructure, ensuring performance, reliability, and scalability. Proficient in designing and implementing CI/CD pipelines (Azure DevOps, AWS CodeBuild), managing containerized applications (Kubernetes, Docker), and utilizing cloud services (AWS, Azure). Skilled in Infrastructure as Code (Terraform, Ansible, CloudFormation, ARM) and monitoring (CloudWatch, Azure Monitor, Prometheus, Grafana). Also experienced in Embedded Software Engineering (C++, C, Python, Yocto, RTOS).
+  Platform Engineer with experience developing and maintaining backend infrastructure, ensuring performance, reliability, and scalability. Proficient in designing and implementing CI/CD pipelines (Azure DevOps, AWS CodeBuild), managing containerized applications (Kubernetes, Docker), and utilizing cloud services (AWS, Azure). Skilled in Infrastructure as Code (Terraform, Ansible, CloudFormation, ARM) and monitoring (CloudWatch, Azure Monitor, Prometheus, Grafana). AWS Certified Solutions Architect with deep expertise in cloud architecture and best practices. Also experienced in Embedded Software Engineering (C++, C, Python, Yocto, RTOS).
 
-  Key skills include: <mark>AWS</mark>, <mark>Azure DevOps</mark>, <mark>Kubernetes</mark>, <mark>Terraform</mark>, <mark>CI/CD</mark>, <mark>C/C++</mark>, <mark>Embedded Linux</mark>.
+  Key skills include: <mark>AWS</mark>, <mark>Azure DevOps</mark>, <mark>Kubernetes</mark>, <mark>Terraform</mark>, <mark>CI/CD</mark>, <mark>C/C++</mark>, <mark>Embedded Linux</mark>. 
 
 content:
-  - title: Projects
-    layout: list
-    content:
-      - layout: top-middle
-        title: Processor Design for Graph Applications
-        additional_links:
-          - title: IEEE 2022 30th Signal Processing and Communications Applications Conference
-            icon: fas fa-book
-            url:
-        quote: >
-          Publication based on Master's research[cite: 21].
-        description: |
-          Developed as part of the Master's program at Bilkent University[cite: 21]. Analysis of Scratch Pad Memory-based Processor Architecture for Graph Parallel Applications[cite: 21].
+  # - title: Projects
+  #   layout: list
+  #   content:
+  #     - layout: top-middle
+  #       title: Processor Design for Graph Applications
+  #       additional_links:
+  #         - title: IEEE 2022 30th Signal Processing and Communications Applications Conference
+  #           icon: fas fa-book
+  #           url:
+  #       quote: >
+  #         Publication based on Master's research.
+  #       description: |
+  #         Developed as part of the Master's program at Bilkent University. Analysis of Scratch Pad Memory-based Processor Architecture for Graph Parallel Applications.
 
-      - layout: top-middle
-        title: Secure Communication System for SUPARCO
-        quote: >
-          Final Year Project for Bachelor's degree[cite: 22].
-        description: |
-          Development of Secure and Reliable Communication System for SUPARCO (Pakistan) for B.Sc. at COMSATS University[cite: 22].
+  #     - layout: top-middle
+  #       title: Secure Communication System for SUPARCO
+  #       quote: >
+  #         Final Year Project for Bachelor's degree.
+  #       description: |
+  #         Development of Secure and Reliable Communication System for SUPARCO (Pakistan) for B.Sc. at COMSATS University.
 
   - title: Experience
     layout: list
     content:
       - layout: left
-        title: BP Pulse
+        title: BP (British Petroleum)
         sub_title: Platform Engineer
-        caption:
+        caption: March 202 – Present
         description: |
             Develop and maintain backend infrastructure for the BP Pulse app, ensuring performance, reliability, and scalability.
             Design and implement CI/CD pipelines using Azure DevOps Pipelines and AWS CodeBuild, enabling efficient software delivery and automated deployments.
@@ -62,23 +62,23 @@ content:
       - layout: left
         title: BP (British Petroleum)
         sub_title: Embedded Software Engineer
-        caption: October 2022 – Present
+        caption: October 2022 – February 2024
         description: |
-            Develop and design next-gen embedded software (C++/C) for electric car chargers (IEC 61851, OCPP 1.6 & 2.0.1, MISRA, UK smart charge standards)[cite: 6, 7]. Design Windows-based simulator for charge points[cite: 8]. Develop/build embedded Linux (Yocto) for SoCs[cite: 9]. Maintain legacy Python code[cite: 10]. Create/Maintain CI/CD pipelines (Azure ADO, AWS)[cite: 10]. Provide customer support for bugs[cite: 11].
+            Develop and design next-gen embedded software (C++/C) for electric car chargers (IEC 61851, OCPP 1.6 & 2.0.1, MISRA, UK smart charge standards). Design Windows-based simulator for charge points. Develop/build embedded Linux (Yocto) for SoCs. Maintain legacy Python code. Create/Maintain CI/CD pipelines (Azure ADO, AWS). Provide customer support for bugs.
 
       - layout: left
         title: Baykar Tech
         sub_title: Embedded Software Engineer
         caption: April 2021 – October 2022
         description: |
-            Spearheaded multi-threaded C/C++ scalable applications on Embedded ARM SoCs[cite: 12]. Managed/built Real-time Linux (RTOS) kernel builds and C device drivers[cite: 13]. Developed FPGA IPs and device drivers for ARM SoCs (GNSS, Ethernet)[cite: 14]. Maintained embedded Linux bootloaders and device trees[cite: 15]. Performed integration testing for UAV applications[cite: 16]. Designed/simulated MATLAB Simulink models for 5G signal processing[cite: 17].
+            Spearheaded multi-threaded C/C++ scalable applications on Embedded ARM SoCs. Managed/built Real-time Linux (RTOS) kernel builds and C device drivers. Developed FPGA IPs and device drivers for ARM SoCs (GNSS, Ethernet). Maintained embedded Linux bootloaders and device trees. Performed integration testing for UAV applications. Designed/simulated MATLAB Simulink models for 5G signal processing.
 
       - layout: left
         title: Bilkent University
         sub_title: Graduate Teaching Assistant
         caption: September 2018 – April 2021
         description: |
-            Provided instructional support, formulated lesson plans[cite: 18]. Trained undergraduate students on FPGA development and digital design systems (System Verilog/Verilog)[cite: 19, 20]. Instructed weekly labs and tutorials[cite: 20].
+            Provided instructional support, formulated lesson plans. Trained undergraduate students on FPGA development and digital design systems (System Verilog/Verilog). Instructed weekly labs and tutorials.
 
   - title: Education
     layout: list
@@ -88,18 +88,18 @@ content:
         caption: 2021
         sub_title: Master of Science in Computer Engineering
         description: |
-          Publication: Processor Design for Graph Applications – IEEE 2022 30th Signal Processing and Communications Applications Conference[cite: 21].
-          Awards/Honours: Departmental Scholarship, TÜBİTAK Sponsored Project (Grant no: EEEAG 119E559)[cite: 21].
-          Research Thesis: “Analysis of Scratch Pad Memory-based Processor Architecture for Graph Parallel Applications.” [cite: 21]
+          Publication: Processor Design for Graph Applications – [IEEE 2022 30th Signal Processing and Communications Applications Conference](https://ieeexplore.ieee.org/document/9864699), 
+          Awards/Honours: Departmental Scholarship, TÜBİTAK Sponsored Project (Grant no: EEEAG 119E559).
+          Research Thesis: “Analysis of Scratch Pad Memory-based Processor Architecture for Graph Parallel Applications.” [Bilkent University Repository](https://repository.bilkent.edu.tr/items/ee6d144f-9d8f-49b4-a4d1-ba2aa8b28e7b).
 
       - layout: left
         title: COMSATS University, Islamabad, Pakistan
         caption: 2018
         sub_title: Bachelor of Science in Electrical (Computer) Engineering
         description: |
-          GPA: 3.43/4.00[cite: 22].
-          Awards/Honours: Two Distinctions, Honour Roll[cite: 22].
-          Final Year Project: “Development of Secure and Reliable Communication System for SUPARCO (Pakistan).” [cite: 22]
+          GPA: 3.43/4.00.
+          Awards/Honours: Two Distinctions, Honour Roll.
+          Final Year Project: “Development of Secure and Reliable Communication System for SUPARCO (Pakistan).”
 
 footer_show_references: true
 
