@@ -13,9 +13,6 @@ darkmode: true
 
 github_username: maamirs
 linkedin_username: maamirs
-embed_badge: |
-  <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="87108f8b-4bb9-487d-88bb-d171e7bfae46" data-share-badge-host="https://www.credly.com"></div>
-  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 
 additional_links:
@@ -104,6 +101,26 @@ content:
           GPA: 3.43/4.00.
           Awards/Honours: Two Distinctions, Honour Roll.
           Final Year Project: “Development of Secure and Reliable Communication System for SUPARCO (Pakistan).”
+
+
+  - title: Certifications
+    layout: list
+    content:
+      - layout: left
+        title: AWS Certified Solutions Architect – Associate
+        caption: 2024
+        description: |
+          AWS Certified Solutions Architect – Associate (Valid until 2027).
+          ![aws-certified-solutions-architect-associate](/images/aws-certified-solutions-architect-associate.png "aws-certified-solutions-architect-associate")
+
+
+      - layout: left
+        title: AWS Certified Cloud Practitioner
+        caption: 2024
+        description: |
+          AWS Certified Cloud Practitioner (Valid until 2027).
+          ![aws-certified-cloud-practitioner](/images/aws-certified-cloud-practitioner.png "aws-certified-cloud-practitioner")
+
 
 footer_show_references: true
 
