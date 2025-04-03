@@ -108,17 +108,15 @@ content:
     content:
       - layout: left
         title: AWS Certified Solutions Architect – Associate
-        caption: 2024
+        caption: Valid until 2027
         description: |
-          AWS Certified Solutions Architect – Associate (Valid until 2027).
           ![aws-certified-solutions-architect-associate](/images/aws-certified-solutions-architect-associate.png "aws-certified-solutions-architect-associate")
 
 
       - layout: left
         title: AWS Certified Cloud Practitioner
-        caption: 2024
+        caption: Valid until 2027
         description: |
-          AWS Certified Cloud Practitioner (Valid until 2027).
           ![aws-certified-cloud-practitioner](/images/aws-certified-cloud-practitioner.png "aws-certified-cloud-practitioner")
 
 
