@@ -106,6 +106,7 @@ content:
   - title: Certifications
     layout: text
     content: |
+        ![aws-certified-devops-engineer-professional](/images/aws-certified-devops-engineer-professional.png "aws-certified-devops-engineer-professional")
         ![aws-certified-solutions-architect-associate](/images/aws-certified-solutions-architect-associate.png "aws-certified-solutions-architect-associate")
         ![aws-certified-cloud-practitioner](/images/aws-certified-cloud-practitioner.png "aws-certified-cloud-practitioner")
 
