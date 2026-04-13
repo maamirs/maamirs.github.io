@@ -1,10 +1,10 @@
-repository: sproogen/resume-theme 
-favicon: images/favicon.ico 
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
 
 version: 2
 
 name: Muhammad Aamir Saeed
-title: Platform Engineer
+title: Platform Engineer & SRE
 location: Milton Keynes, England
 email: m.aamir.s.110@gmail.com
 website: www.linkedin.com/in/maamirs
@@ -14,103 +14,133 @@ darkmode: true
 github_username: maamirs
 linkedin_username: maamirs
 
-
 additional_links:
 
 about_profile_image: images/profile.jpg
 about_content: |
-  Platform Engineer with experience developing and maintaining backend infrastructure, ensuring performance, reliability, and scalability. Proficient in designing and implementing CI/CD pipelines (Azure DevOps, AWS CodeBuild), managing containerized applications (Kubernetes, Docker), and utilizing cloud services (AWS, Azure). Skilled in Infrastructure as Code (Terraform, Ansible, CloudFormation, ARM) and monitoring (CloudWatch, Azure Monitor, Prometheus, Grafana). AWS Certified Solutions Architect with deep expertise in cloud architecture and best practices. Also experienced in Embedded Software Engineering (C++, C, Python, Yocto, RTOS).
+  Platform Engineer and SRE with 3+ years designing and operating cloud-native infrastructure at BP, supporting the bp pulse EV charging network across Europe. I own systems end-to-end: architecture, provisioning, observability, CI/CD, and production on-call.
 
-  Key skills include: <mark>AWS</mark>, <mark>Azure DevOps</mark>, <mark>Kubernetes</mark>, <mark>Terraform</mark>, <mark>CI/CD</mark>, <mark>C/C++</mark>, <mark>Embedded Linux</mark>. 
+  I have built real-time data pipelines on AWS Kinesis, run EKS clusters with ArgoCD GitOps, written Python tooling distributed as internal packages, and built a Terraform MCP server that exposes live infrastructure state to LLM-based tooling. Before BP, I spent two years at Baykar Technology writing Real-Time Linux kernels for UAV flight control systems on ARM SoCs — work that required sub-millisecond deterministic latency and hardware-level debugging.
+
+  I hold AWS Certified DevOps Engineer (Professional) and AWS Certified Solutions Architect (Associate) certifications.
+
+  Key skills: <mark>AWS</mark> <mark>Kubernetes / EKS</mark> <mark>Terraform</mark> <mark>Python</mark> <mark>ArgoCD</mark> <mark>OpenTelemetry</mark> <mark>Prometheus / Grafana</mark> <mark>Linux / Kernel Engineering</mark> <mark>CI/CD</mark> <mark>C/C++</mark>
 
 content:
-  # - title: Projects
-  #   layout: list
-  #   content:
-  #     - layout: top-middle
-  #       title: Processor Design for Graph Applications
-  #       additional_links:
-  #         - title: IEEE 2022 30th Signal Processing and Communications Applications Conference
-  #           icon: fas fa-book
-  #           url:
-  #       quote: >
-  #         Publication based on Master's research.
-  #       description: |
-  #         Developed as part of the Master's program at Bilkent University. Analysis of Scratch Pad Memory-based Processor Architecture for Graph Parallel Applications.
-
-  #     - layout: top-middle
-  #       title: Secure Communication System for SUPARCO
-  #       quote: >
-  #         Final Year Project for Bachelor's degree.
-  #       description: |
-  #         Development of Secure and Reliable Communication System for SUPARCO (Pakistan) for B.Sc. at COMSATS University.
-
   - title: Experience
     layout: list
     content:
       - layout: left
         title: BP (British Petroleum)
-        sub_title: Platform Engineer
-        caption: March 2024 – Present
+        sub_title: Platform Engineer & Site Reliability Engineer
+        caption: December 2023 – Present
         description: |
-            Develop and maintain backend infrastructure for the BP Pulse app, ensuring performance, reliability, and scalability.
-            Design and implement CI/CD pipelines using Azure DevOps Pipelines and AWS CodeBuild, enabling efficient software delivery and automated deployments.
-            Manage and optimize containerized applications using Kubernetes (Amazon EKS) and Docker, ensuring seamless orchestration and scalability.
-            Utilize AWS services (EC2, S3, RDS, Lambda, DynamoDB, CloudFormation) and Azure DevOps to build and deploy scalable cloud solutions.
-            Automate infrastructure provisioning and configuration management with Terraform, Ansible, CloudFormation, and Azure Resource Manager (ARM) templates.
-            Implement monitoring and observability using AWS CloudWatch, Azure Monitor, Prometheus, and Grafana, ensuring system reliability and proactive incident resolution.
+          Working within the M&C Europe and bp pulse EV charging network team, responsible for the platform and infrastructure underpinning charge point telemetry, EV fleet management, and the bp pulse app across Europe.
+
+          - Designed and operated real-time data ingestion infrastructure on AWS Kinesis, aggregating telemetry from 50,000+ EV charge points across multiple AWS accounts. Managed consumer scaling, shard configuration, and pipeline reliability end-to-end.
+          - Provisioned all platform infrastructure with Terraform across three AWS regions: EKS clusters, ECS, RDS Postgres, Kinesis, Lambda, IAM, VPC, Secrets Manager, S3, and CloudWatch. PR-based plan review before every apply.
+          - Ran EKS clusters with ArgoCD GitOps workflows and a 20+ template Helm chart library. Maintained 99.9% monthly uptime SLO across multi-tenant clusters serving eight product teams.
+          - Built observability from scratch: OpenTelemetry collectors, Prometheus, Grafana, and Loki across 12 microservices. Defined SLIs, SLOs, and error budgets for six core services.
+          - Built a Terraform MCP server in Python integrated with Azure MCP, exposing live infrastructure state as a queryable API for LLM-based tooling. Used daily for plan review and incident triage.
+          - Wrote Python tooling distributed as internal packages: an OTel instrumentation library, a percentile-based alerting library (cut alert noise 60%), and a deployment health check service used as a release gate.
+          - Implemented cloud security controls: IAM least-privilege scoping, Secrets Manager rotation, VPC segmentation, Kubernetes RBAC and NetworkPolicies, and audit-ready access logs.
+          - Led incident response end-to-end. During a Kinesis shard iterator misconfiguration taking down real-time ingestion across 50,000 charge points, identified root cause, coordinated rollback, and resolved in under 40 minutes.
+          - Cut monthly AWS spend by 30% through a Terraform audit identifying orphaned resources, oversized compute, and unused Kinesis shards.
 
       - layout: left
         title: BP (British Petroleum)
         sub_title: Embedded Software Engineer
-        caption: October 2022 – February 2024
+        caption: October 2022 – December 2023
         description: |
-            Develop and design next-gen embedded software (C++/C) for electric car chargers (IEC 61851, OCPP 1.6 & 2.0.1, MISRA, UK smart charge standards). Design Windows-based simulator for charge points. Develop/build embedded Linux (Yocto) for SoCs. Maintain legacy Python code. Create/Maintain CI/CD pipelines (Azure ADO, AWS). Provide customer support for bugs.
+          - Developed next-generation embedded software in C++ for EV chargers, compliant with IEC 61851, OCPP 1.6 and 2.0.1, MISRA, and UK smart charge standards.
+          - Built custom Embedded Linux (Yocto) distributions for SoC hardware: board bring-up, driver integration, kernel configuration, and release.
+          - Fixed kernel scheduler bottlenecks causing 300ms latency spikes in field-deployed units, traced via perf and ftrace to a misconfigured CPU affinity setting.
+          - Built Azure DevOps and AWS CodeBuild CI/CD pipelines for embedded Linux build and release. Cut build times 40% through parallel stage execution and incremental Yocto layer caching.
+          - Developed a Windows-based charge point simulator for integration testing.
 
       - layout: left
         title: Baykar Tech
         sub_title: Embedded Software Engineer
         caption: April 2021 – October 2022
         description: |
-            Spearheaded multi-threaded C/C++ scalable applications on Embedded ARM SoCs. Managed/built Real-time Linux (RTOS) kernel builds and C device drivers. Developed FPGA IPs and device drivers for ARM SoCs (GNSS, Ethernet). Maintained embedded Linux bootloaders and device trees. Performed integration testing for UAV applications. Designed/simulated MATLAB Simulink models for 5G signal processing.
+          Baykar Technology is a Turkish defence company and the manufacturer of the Bayraktar TB2 UAV, one of the most operationally deployed unmanned aerial vehicles in the world.
+
+          - Wrote and tuned Real-Time Linux kernels for UAV flight control on ARM Cortex-A SoCs. Hard requirement: deterministic latency under 1ms. Applied PREEMPT_RT patches, tuned IRQ affinity, scheduler parameters, and memory locking policies. Validated with perf, ftrace, and cyclictest.
+          - Built a high-speed Ethernet FPGA IP in Verilog/SystemVerilog: MAC layer, FIFO buffering, and DMA interface. Diagnosed and fixed burst-traffic packet loss via FIFO underrun analysis.
+          - Built a GNSS FPGA IP covering signal acquisition, tracking, and navigation data decoding under tight timing constraints.
+          - Maintained embedded Linux bootloaders and device trees across multiple hardware revisions.
+          - Designed and simulated MATLAB Simulink models for 5G signal processing.
 
       - layout: left
         title: Bilkent University
         sub_title: Graduate Teaching Assistant
-        caption: September 2018 – April 2021
+        caption: September 2018 – March 2021
         description: |
-            Provided instructional support, formulated lesson plans. Trained undergraduate students on FPGA development and digital design systems (System Verilog/Verilog). Instructed weekly labs and tutorials.
+          - Taught FPGA development and digital systems design to undergraduates.
+          - Ran weekly lab sessions covering Verilog/SystemVerilog, timing analysis, and hardware debugging.
+          - Formulated lesson plans and provided one-to-one instructional support.
+
+  - title: Projects
+    layout: list
+    content:
+      - layout: top-middle
+        title: Terraform MCP Server
+        quote: >
+          A Python MCP server exposing live Terraform infrastructure state to LLM-based tooling.
+        description: |
+          Built a Model Context Protocol (MCP) server in Python that integrates with Claude and Azure MCP. Engineers can query live infrastructure state in natural language — which resources exist, their configuration, recent changes, environment diffs — without reading Terraform state files or writing HCL queries directly.
+
+          Designed the tool call schema, scoped what the service exposes for security, and wrote automated tests for the API boundary. Used daily at BP for plan review and incident triage.
+
+          **Stack:** Python, MCP SDK, Terraform, Claude API, Azure MCP
+
+      - layout: top-middle
+        title: OCPP MCP Server
+        quote: >
+          A TypeScript MCP server for OCPP 1.6 and 2.0.1 schema lookup.
+        description: |
+          Designed and scaffolded a TypeScript MCP server supporting dual OCPP 1.6 and 2.0.1 schema lookup via five tools: lookup_action, get_schema, list_actions, compare_versions, and search_by_keyword. Built for Claude Desktop integration via stdio transport.
+
+          **Stack:** TypeScript, MCP SDK, OCPP 1.6 / 2.0.1
+
+      - layout: top-middle
+        title: Processor Design for Graph Applications
+        additional_links:
+          - title: IEEE 2022 30th Signal Processing and Communications Applications Conference
+            icon: fas fa-book
+            url: https://ieeexplore.ieee.org/document/9864699
+        quote: >
+          Publication based on Master's research at Bilkent University.
+        description: |
+          Analysis of Scratch Pad Memory-based Processor Architecture for Graph Parallel Applications. Research sponsored by TÜBİTAK (Grant no: EEEAG 119E559). Published at the IEEE 2022 Signal Processing and Communications Applications Conference.
 
   - title: Education
     layout: list
     content:
       - layout: left
         title: Bilkent University, Ankara, Turkey
-        caption: 2021
+        caption: 2018 – 2021
         sub_title: Master of Science in Computer Engineering
         description: |
-          Publication: Processor Design for Graph Applications – [IEEE 2022 30th Signal Processing and Communications Applications Conference](https://ieeexplore.ieee.org/document/9864699), 
-          Awards/Honours: Departmental Scholarship, TÜBİTAK Sponsored Project (Grant no: EEEAG 119E559).
-          Research Thesis: “Analysis of Scratch Pad Memory-based Processor Architecture for Graph Parallel Applications.” [Bilkent University Repository](https://repository.bilkent.edu.tr/items/ee6d144f-9d8f-49b4-a4d1-ba2aa8b28e7b).
+          Thesis: "Analysis of Scratch Pad Memory-based Processor Architecture for Graph Parallel Applications."
+          Publication: IEEE 2022 Signal Processing and Communications Applications Conference.
+          Awards: Departmental Scholarship, TÜBİTAK Sponsored Research Grant (EEEAG 119E559).
 
       - layout: left
         title: COMSATS University, Islamabad, Pakistan
-        caption: 2018
+        caption: 2014 – 2018
         sub_title: Bachelor of Science in Electrical (Computer) Engineering
         description: |
           GPA: 3.43/4.00.
-          Awards/Honours: Two Distinctions, Honour Roll.
-          Final Year Project: “Development of Secure and Reliable Communication System for SUPARCO (Pakistan).”
-
+          Awards: Two Distinctions, Honour Roll, Prime Minister's Award 2017.
+          Final Year Project: "Development of Secure and Reliable Communication System for SUPARCO (Pakistan)."
 
   - title: Certifications
     layout: text
     content: |
-        ![aws-certified-devops-engineer-professional](/images/aws-certified-devops-engineer-professional.png "aws-certified-devops-engineer-professional")
-        ![aws-certified-solutions-architect-associate](/images/aws-certified-solutions-architect-associate.png "aws-certified-solutions-architect-associate")
-        ![aws-certified-cloud-practitioner](/images/aws-certified-cloud-practitioner.png "aws-certified-cloud-practitioner")
-
-
+      ![aws-certified-devops-engineer-professional](/images/aws-certified-devops-engineer-professional.png "AWS Certified DevOps Engineer – Professional")
+      ![aws-certified-solutions-architect-associate](/images/aws-certified-solutions-architect-associate.png "AWS Certified Solutions Architect – Associate")
+      ![aws-certified-cloud-practitioner](/images/aws-certified-cloud-practitioner.png "AWS Certified Cloud Practitioner")
 
 footer_show_references: true
 
@@ -121,4 +151,4 @@ sass:
   style: compressed
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag
